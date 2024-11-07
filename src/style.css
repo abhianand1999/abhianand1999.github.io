@@ -1,0 +1,12 @@
+* {
+    font-family: 'Lora', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+button {
+    background-color: white;
+    border: 0
+}
