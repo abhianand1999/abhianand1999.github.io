@@ -1,6 +1,6 @@
 import React from 'react';
-import { HikeTemplate } from './hikingtemplate';
-import { Hikes } from './hikes';
+import { hikingTemplate } from './hikingtemplate';
+import { hikes } from './hikes';
 
 export const HikingSection = () => {
   return (
@@ -10,7 +10,7 @@ export const HikingSection = () => {
         <div className="overflow-x-auto pb-6">
           <div className="flex space-x-4">
             {hikes.map((hike, index) => (
-              <hikeTemplate key={index} hike={hike} />
+              <hikingTemplate key={index} hike={hike} />
             ))}
           </div>
         </div>

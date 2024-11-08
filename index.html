@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.85">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400|Raleway:400,700|Lora:400,700" type="text/css">
     
@@ -23,48 +23,7 @@
       </nav>
     </header>
     <h1>Abhi Anand</h1>
-    <section id="about">
-        <h2>About</h2>
-        <p>Hi, I'm Abhi! Welcome. 
-
-            I'm currently a Software Engineer at Citadel for the Crude Oil Trading Desk. 
-            
-            In a past life, I've worked on Robotics at Amazon, consulted for companies like TED, Adidas and United, and helped students learn Computer Science through Juni Learning.
-        </p>
-    </section>
-    <div id="experience">
-        <h2>Experience</h2>
-    </div>
-    <div id="contact">
-        <h2>Contact</h2>
-        <p>abhinavanand@berkeley.edu // (408) 203-9582 // linkedin.com/in/abhianand99</p>
-    </div>
-
-    <script type="text/babel">
-        const HikingSection = () => {
-            return <div>Hiking Section</div>;
-        };
-    
-        ReactDOM.render(
-            <HikingSection />,
-            document.getElementById('hiking-section')
-        );
-    </script>
-
-    <script>
-    function jumpToSection(targetId) {
-        const element = document.getElementById(targetId);
-        if (element) {
-            element.scrollIntoView({behavior: 'smooth'});
-        } else {
-            console.error(`Element with id "${targetId}" not found.`);
-        }
-    }
-
-    function openResume() {
-        const pdfUrl = 'assets/Abhi Anand Resume.pdf';
-        window.open(pdfUrl, '_blank');
-    }
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
