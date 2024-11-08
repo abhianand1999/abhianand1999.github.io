@@ -1,6 +1,5 @@
-// src/components/hiking/index.jsx
 import React from 'react'
-import {hikes} from './hiking-data'
+import {hikes} from './hiking-data.js'
 
 const HikeCard = ({ hike }) => {
   const [expanded, setExpanded] = React.useState(false)
