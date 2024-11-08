@@ -1,4 +1,4 @@
-import { HikingSection } from './components/hiking'
+import HikingSection from './components/hiking/hikingtemplate'
 
 function App() {
   return (
