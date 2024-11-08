@@ -3,7 +3,7 @@ import HikingSection from './components/hiking/hikingtemplate'
 function App() {
   return (
     <div>
-      <h1>My Website</h1>
+      <h1>Abhi Anand</h1>
       <HikingSection />
     </div>
   )
