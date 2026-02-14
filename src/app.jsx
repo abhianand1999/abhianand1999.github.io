@@ -1,12 +1,22 @@
-import HikingSection from './components/hiking/hikingtemplate.jsx'
+import React from 'react';
+import TopNav from './components/TopNav';
+import SideNav from './components/SideNav';
+import About from './components/About';
+import Experience from './components/Experience';
+import Interests from './components/Interests';
 
 function App() {
   return (
-    <div>
-      <h1>Abhi Anand</h1>
-      <HikingSection />
+    <div className="App">
+      <TopNav />
+      <SideNav />
+      <main>
+        <About />
+        <Experience />
+        <Interests />
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
