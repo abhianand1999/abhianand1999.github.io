@@ -1,7 +1,7 @@
 :root {
-  --background-color: #121212;
-  --text-color: #ffffff;
-  --primary-color: #bb86fc;
+  --background-color: #333333;
+  --text-color: #F5F5F5;
+  --primary-color: #F5F5F5;
 }
 
 body {
@@ -65,18 +65,31 @@ body {
 }
 
 main {
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
 }
 
 section {
-  min-height: 100vh;
-  padding: 2rem;
+  padding: 1.5rem;
   border-bottom: 1px solid var(--primary-color);
 }
 
 h2 {
   font-size: 2rem;
   color: var(--primary-color);
+}
+
+.experience-item {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.experience-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.experience-details p {
+  margin: 0;
 }
