@@ -43,22 +43,29 @@ body {
 
 .side-nav {
   position: fixed;
-  top: 1rem; /* Position at the top */
+  bottom: 1rem;
   left: 1rem;
   display: flex;
-  flex-direction: row; /* Transpose to horizontal */
-  gap: 0.5rem; /* Make it tighter */
-  z-index: 10; /* Ensure it's above other content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 10;
 }
 
 .side-nav a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 0.9rem; /* Smaller font */
-  padding: 0.2rem 0.5rem; /* Adjust padding for tightness */
+  font-size: 1rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 1rem 0.5rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
+
+
+
 
 .side-nav a:hover {
   color: var(--primary-color);
@@ -68,6 +75,10 @@ main {
   padding-top: 2rem;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.main-content {
+  display: flex;
 }
 
 section {
