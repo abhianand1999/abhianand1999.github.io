@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 0.9em;
 }
 
 .App {
@@ -21,7 +22,7 @@ body {
 .top-nav {
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
   background-color: var(--background-color);
   z-index: 10;
 }
@@ -98,6 +99,12 @@ section {
 .experience-company {
   font-size: 1.1em;
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.experience-dates {
+  font-size: 1em;
+  margin-bottom: 0.1rem;
   color: var(--primary-color);
 }
 
