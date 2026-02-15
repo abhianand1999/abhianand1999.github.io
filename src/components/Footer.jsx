@@ -1,12 +1,12 @@
 import React from 'react';
 
-function SideNav() {
+function Footer() {
   return (
-    <nav className="side-nav">
+    <footer className="footer">
       <a href="assets/Abhi's Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       <a href="mailto:abhinavanand@berkeley.edu">Contact</a>
-    </nav>
+    </footer>
   );
 }
 
-export default SideNav;
+export default Footer;
