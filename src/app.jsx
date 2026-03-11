@@ -1,10 +1,13 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import Experience from './components/Experience';
 import Interests from './components/Interests';
 import Footer from './components/Footer';
+import ResumeTailor from './components/ResumeTailor';
+import './resume-tailor.css';
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <main>
@@ -14,6 +17,17 @@ function App() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/resume-tailor" element={<ResumeTailor />} />
+      </Routes>
+    </Router>
   );
 }
 
